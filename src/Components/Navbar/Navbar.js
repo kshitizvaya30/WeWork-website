@@ -24,25 +24,25 @@ function Navbar() {
             <ul className={click ? "navbar-container navbar-mobile" : "navbar-container"}>
               <li>
                 <a href="/">
-                  <BsSearch size={25} />
+                  <BsSearch size={20} />
                 </a>
                 <div className="tagline">Search</div>
               </li>
               <li>
                 <a href="/">
-                  <HiOutlineInbox size={30} />
+                  <HiOutlineInbox size={25} />
                 </a>
                 <div className="tagline">Message</div>
               </li>
               <li>
                 <a href="/">
-                  <IoNotificationsOutline size={30} />
+                  <IoNotificationsOutline size={25} />
                 </a>
                 <div className="tagline">Notification</div>
               </li>
               <li>
                 <a href="/">
-                  <FiHelpCircle size={30} />
+                  <FiHelpCircle size={25} />
                 </a>
                 <div className="tagline">Help</div>
               </li>
@@ -63,12 +63,12 @@ function Navbar() {
           <div className="navbar-container-mobile">
             {!click && (
               <div className="menu-icon" onClick={() => setClick(true)}>
-                <GoThreeBars size={30} />
+                <GoThreeBars size={25} />
               </div>
             )}
             {click && (
               <div className="close-icon" onClick={() => setClick(false)}>
-                <IoCloseOutline size={30} />
+                <IoCloseOutline size={25} />
               </div>
             )}
           </div>
