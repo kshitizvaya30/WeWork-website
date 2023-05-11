@@ -1,3 +1,45 @@
+
+
+<h2>About the project</h2>
+
+  <p><b>WeWork</b></p>
+
+👉 Live Demo: <a>WeWork Demo - https://wework.netlify.app/</a>
+
+<h3>Build with:</h3>
+
+» Sassy Cascading Style Sheets (SCSS) <br>
+» React JS
+
+<h2>Screenshots of the Project 📸</h2>
+<br>
+<h3 align='center'>Laptop view</h3>
+
+<div align='center'>
+<img width="1679" alt="Screenshot 2023-05-11 at 4 52 44 PM" src="https://github.com/kshitizvaya30/WeWork-website/assets/75470682/d1e1460a-0e0c-40d4-a700-212e5b39f2f1">
+
+<img width="1679" alt="Screenshot 2023-05-11 at 4 52 51 PM" src="https://github.com/kshitizvaya30/WeWork-website/assets/75470682/6d6fc6b2-f3a5-4a15-a2e2-11edd2dc4555">
+
+<img width="395" alt="Screenshot 2023-05-11 at 6 16 58 PM" src="https://github.com/kshitizvaya30/WeWork-website/assets/75470682/8d4fa167-55f7-4185-ab0d-90582e383779">
+</div>
+
+
+<br>
+<h3 align='center'>Ipad view</h3>
+
+<div align='center'>
+<img width="576" alt="Screenshot 2023-05-11 at 4 55 01 PM" src="https://github.com/kshitizvaya30/WeWork-website/assets/75470682/6547f1ad-0f81-49e4-a650-135b00e34202">
+
+</div>
+
+
+<br>
+<h3 align='center'>Mobile view</h3>
+
+<div align='center'>
+<img width="395" alt="Screenshot 2023-05-11 at 4 55 54 PM" src="https://github.com/kshitizvaya30/WeWork-website/assets/75470682/df31443d-7ef3-4613-be53-d317b15d3aed">
+</div>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -27,7 +69,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `DEPLOYMENT`
+For Deplyment using Netlify , there are two options - 
+1. Directly Upload the Build folder on Netlify.
+2. Connect the Github Repository with Netlify and then deploy.
 
 ### `npm run eject`
 
