@@ -6,6 +6,8 @@ import Tabs from "../companyInfo/Tabs";
 import FilledLoader from "../Loader/Loader";
 import BasicInfo from "../companyInfo/BasicInfoPage/BasicInfo";
 import { BiPlus } from "react-icons/bi";
+import salesforce from '../assets/salesforce.svg';
+import wework from '../assets/wework 1.svg'
 
 function Home() {
   const [filled, setFilled] = useState(3);
@@ -16,19 +18,28 @@ function Home() {
         <Button className="btn-primary">Publish/Share</Button>
       </div>
 
-      <div className="imgContainer">
-        <div className="main-img">
-          <img src={heroImg} alt="hero-img1" />
+      <div className="subContainer">
+        <div className="imgContainer">
+          <div className="main-img">
+            <img src={heroImg} alt="hero-img1" />
+          </div>
+          <div className="content"></div>
+          <div className="heading">
+            <p>WorkSpace </p>
+            <p>Proposal</p>
+          </div>
         </div>
-        <div className="content"></div>
-        <div className="heading">
-          <p>WorkSpace </p>
-          <p>Proposal</p>
-        </div>
+
         <div className="DownLeftTab">
-          <div className="logo"></div>
-          <div className="icon"><BiPlus /> </div>
-          <div className="logo"></div>
+          <div className="logo">
+            <img src={wework} alt="wework logo"/>
+          </div>
+          <div className="icon">
+            <BiPlus />
+          </div>
+          <div className="logo">
+            <img src={salesforce} alt="salesforce logo" />
+          </div>
         </div>
       </div>
 
