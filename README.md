@@ -4,7 +4,7 @@
 
   <p><b>WeWork</b></p>
 
-👉 Live Demo: <a>WeWork Demo - https://wework.netlify.app/</a>
+👉 Live Demo: <a>WeWork Demo - https://wework-project.netlify.app/</a>
 
 <h3>Build with:</h3>
 
