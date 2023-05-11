@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Nav } from "react-bootstrap";
+import React from "react";
 import "./Tabs.scss";
 
 function Tabs() {

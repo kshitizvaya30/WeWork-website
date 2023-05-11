@@ -1,0 +1,28 @@
+@import '../css-config/mixins.scss';
+
+.loaderContainer {
+    display: flex;
+    align-items: center;
+
+    .loaderStyle{
+        background-color: #D3D7D7;
+        height: 8px;
+        width: 9px;
+        margin-right: 2px;
+        margin-left: 0px;
+
+        &.active{
+            background-color: #00B686 !important;
+        }
+
+        @include md{
+            height: 6px;
+            width: 6px;
+        }
+
+        @include sm{
+            height: 4px;
+            width: 6px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .outerCircle {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        background-color: #04433B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .internalCircle {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background-color: #00B686;
+        }
+
+    }
+}

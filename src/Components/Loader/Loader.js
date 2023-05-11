@@ -1,4 +1,5 @@
 import React from 'react';
+import './Loader.scss'
 
 const FilledLoader = ({ filledPercentage }) => {
   const filledLoaders = Math.ceil(filledPercentage / 5);
@@ -10,15 +11,10 @@ const FilledLoader = ({ filledPercentage }) => {
     for (let i = 0; i < totalLoaders; i++) {
       const isFilled = i < filledLoaders;
       const loaderStyle = {
-        backgroundColor: isFilled ? '#00B686' : '#D3D7D7',
-        height: '8px',
-        width: '10px',
-        marginRight: '2px',
-        marginLeft: '0px',
         borderRadius: i === 0 ? '10px 0 0 10px' : i === totalLoaders - 1 ? '0 10px 10px 0' : 'none',
       };
 
-      loaders.push(<div key={i} style={loaderStyle} />);
+      loaders.push(<div key={i} style={loaderStyle} className={isFilled ? "loaderStyle active" : "loaderStyle "} />);
     }
 
     return loaders;
@@ -26,7 +22,7 @@ const FilledLoader = ({ filledPercentage }) => {
 
   return (
     <div>
-      <div style={{ display: 'flex', alignItems: 'center' }}>{renderLoaders()}</div>
+      <div className="loaderContainer">{renderLoaders()}</div>
     </div>
   );
 };

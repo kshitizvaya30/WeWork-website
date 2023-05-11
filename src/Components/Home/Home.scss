@@ -1,20 +1,30 @@
 @import "../css-config/mixins.scss";
 
-.main-container {
+.mainContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    .intro-container {
+    .introContainer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         justify-content: space-between;
         margin: 14px 0px;
-        // background-color: red;
 
-        p {
-            font-size: 2.5vw;
+        .heading {
+            font-size: 35px;
+            color: rgba(4, 67, 59, 1);
+            font-weight: 800;
+
+            @include md {
+                font-size: 25px;
+            }
+
+            @include sm {
+                font-size: 18px;
+            }
         }
 
         .btn-primary {
@@ -24,34 +34,49 @@
             width: 147px;
             border-radius: 5px;
             border: 0px;
+            font-size: 16px;
+            font-weight: 700;
 
             @include sm {
                 height: 32px;
                 width: 114px;
+                font-size: 14px;
             }
         }
     }
 
     .subContainer {
         position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
 
         .imgContainer {
             display: flex;
-            justify-content: flex-start;
+            justify-content: start;
             align-items: center;
             height: 100%;
             width: 100%;
             position: relative;
             overflow: hidden;
+            margin: 0;
+            padding: 0;
 
             .main-img {
                 position: relative;
+                padding: 0;
+                margin: 0;
+                width: 100%;
 
                 img {
-                    width: 107%;
-                    object-fit: contain;
+                    width: 100%;
+                    object-fit: fill;
                     display: block;
+                    padding: 0;
+                    margin: 0;
                     border-radius: 10px;
+
+
                 }
             }
 
@@ -75,9 +100,16 @@
                 justify-content: flex-start;
                 font-weight: 900;
                 position: absolute;
+                top: 25%;
                 right: 15%;
                 font-size: 2.5vw;
                 line-height: 1.5vw;
+
+                @include sm {
+                    right: 10%;
+                    font-size: 3vw;
+                    line-height: 1.5vw;
+                }
             }
         }
 
@@ -94,7 +126,6 @@
             height: 60%;
             border-radius: 10px;
             margin-left: 4%;
-            border: 1px solid red;
 
             @include md {
                 border-radius: 7px;
@@ -142,11 +173,22 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 20px 0px;
+        margin-top: 40px;
+
         // background-color: red;
 
-        p {
-            font-size: 1.5vw;
+        .heading {
+            font-size: 25px;
+            font-weight: 700;
+            color: rgba(35, 55, 53, 1);
+
+            @include md {
+                font-size: 20px;
+            }
+
+            @include sm {
+                font-size: 16px;
+            }
         }
 
         .mutual-action-indicator {
@@ -156,19 +198,46 @@
             justify-content: center;
             height: 100px;
 
-            // background-color: blue;
+            // background-color: green;
+
             .heading {
                 display: flex;
                 flex-direction: row;
-                justify-content: end;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
                 align-items: center;
                 margin-bottom: 3%;
+                
+                .subHeading {
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-right: 50px;
+                    color: rgba(123, 135, 134, 1);
+                    @include md{
+                        font-size: 14px;
+                    }
 
-                // background-color: green;
-                p {
-                    font-size: 1vw;
-                    margin-right: 1vw;
+                    @include md{
+                        font-size: 10px;
+                    }
+                    
                 }
+
+                .percentFilled {
+                    font-size: 18px;
+                    font-weight: 800;
+                    color: #00b686;
+
+                    @include md{
+                        font-size: 14px;
+                    }
+
+                    @include md{
+                        font-size: 10px;
+                    }
+                }
+
             }
         }
     }

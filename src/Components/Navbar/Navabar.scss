@@ -5,18 +5,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    margin-top: -20px;
+    margin: 0;
+    --bs-navbar-padding-y: 0rem !important;
 
     @include sm {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 30px;
+        padding: 20px 0px !important;
     }
 
-    .logo {
+    .hideLogo {
         @include sm {
-            // display: none;
+            display: none;
         }
     }
 
@@ -25,6 +26,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding: 0;
+        margin: 0;
+        
 
         @include sm {
             display: flex;
@@ -44,18 +48,40 @@
             }
         }
 
+        .notification {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .notificationCount{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 9px;
+                color: white;
+                font-weight: 700;
+                top: 5%;
+                right: 5%;
+                height: 17px;
+                width: 17px;
+                border-radius: 50%;
+                background-color: #F97777;
+            }
+        }
+
 
         li {
             list-style: none;
             position: relative;
-            padding: 0 5px;
+            padding-right: 5px;
 
             @include sm {
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
                 height: 5rem;
-                width: 100%;
+                width: 80%;
                 border-bottom: 1px solid #e9ebeb;
             }
 
@@ -121,6 +147,7 @@
                 }
             }
         }
+
         .profilePic {
             pointer-events: none;
         }
@@ -149,6 +176,6 @@
 .hr {
     border: 1px solid #E9EBEB;
     margin: auto;
+    padding: 0;
     width: 95%;
-    margin-top: -25px;
 }

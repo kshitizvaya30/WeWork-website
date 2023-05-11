@@ -1,0 +1,47 @@
+@import '../../../css-config/mixins.scss';
+
+.SideTableContainer {
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid #E9EBEB;
+        background-color: white !important;
+        padding-left: 10px;
+
+        @include md {
+            display: none;
+        }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            border-top: 1px solid #E9EBEB;
+            padding: 11px 0px;
+
+            a {
+                text-decoration: none;
+                color: #7B8786;
+                font-size: 0.9vw;
+                font-weight: 400;
+            }
+        }
+
+        .heading {
+            list-style: none;
+            border-top: 1px solid #E9EBEB;
+            padding: 13px 0px;
+
+            a {
+                text-decoration: none;
+                color: #7B8786;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}

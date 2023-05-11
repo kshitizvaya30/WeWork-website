@@ -13,13 +13,19 @@
 
         .nav-link {
             display: inline-block !important;
-            padding: 1vw !important;
-            font-size: 1vw !important;
-            border: 1px solid #e9ebeb !important;
+            padding: 10px !important;
+            font-size: 16px !important;
+            border: 1px solid #BDC3C2 !important;
             border-top-left-radius: 5px !important;
             border-top-right-radius: 5px !important;
             color: black !important;
-            // text-decoration: none !important;
+            font-weight: 700 !important;
+            color: rgba(101, 115, 114, 1) !important;
+
+            @include sm{
+                padding: 2px !important;
+                font-size: 10px !important;
+            }
 
             &.active {
                 font-weight: bold;

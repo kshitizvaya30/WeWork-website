@@ -7,9 +7,10 @@ import mainImage from "../../assets/mainImage.png";
 import { BiMessageRoundedDetail } from "react-icons/bi";
 import { VscFilePdf } from "react-icons/vsc";
 import { HiDownload } from "react-icons/hi";
-import { BsZoomIn, BsZoomOut } from "react-icons/bs";
+import { BsZoomIn, BsZoomOut, BsThreeDotsVertical } from "react-icons/bs";
 import { AiOutlineShareAlt } from "react-icons/ai";
 import { CiShare1 } from "react-icons/ci";
+import Sidetable from "./SIdeTable/Sidetable";
 
 function BasicInfo() {
   const [pdfPage, setpdfPages] = useState(1);
@@ -18,30 +19,15 @@ function BasicInfo() {
   return (
     <div className="infoContainer">
       <div className="leftContainer">
-        <ul>
-          <div className="heading">
-            <a href="/">Overview</a>
-          </div>
-          <li>
-            <a href="/">Welcome</a>
-          </li>
-          <li>
-            <a href="/">Product Capabilities</a>
-          </li>
-          <li>
-            <a href="/">Customer Success Stories</a>
-          </li>
-          <li>
-            <a href="/">File Sharing</a>
-          </li>
-          <li>
-            <a href="/">Our Deck</a>
-          </li>
-        </ul>
+        <Sidetable />
       </div>
+
+      {/* Right Container */}
       <div className="rightContainer">
         <div className="header">
           <div className="heading1">Company Profile</div>
+
+          {/* Icon Block  */}
           <div className="iconBlock">
             <div className="icon">
               <BsArrowDown size={20} />
@@ -51,32 +37,45 @@ function BasicInfo() {
             </div>
             <div className="icon">
               <RiDeleteBinLine size={20} />
-            </div>
+            </div> 
+          </div>
+
+
+          {/* Three Dots Menu  */}
+          <div className="dropdownMenu">
+            <BsThreeDotsVertical />
           </div>
         </div>
+
+        {/* Main Image Section */}
         <div className="mainImage">
           <img src={mainImage} alt="mainImage" />
           <div className="imageIcons">
             <div className="icon">
-              <VscFilePdf size={20}/>
-              {pdfPage} /{totalPage}
+              <VscFilePdf size={20} />
+            </div>
+            <div>
+              {pdfPage}/{totalPage}
             </div>
             <div className="icon">
-              <HiDownload size={25}/>
+              <HiDownload size={25} />
             </div>
             <div className="icon">
-              <BsZoomIn size={20}/>
+              <BsZoomIn size={20} />
             </div>
             <div className="icon">
-              <BsZoomOut size={20}/>
+              <BsZoomOut size={20} />
             </div>
             <div className="icon">
-              <CiShare1 size={25}/>
+              <CiShare1 size={25} />
             </div>
           </div>
+
+
+          {/* Center Container */}
           <div className="centerContainer">
-            <p className="heading">wework</p>
-            <p className="subHeading">For All the ways you work, we're here</p>
+            <div className="heading">wework</div>
+            <div className="subHeading">For All the ways you work, we're here</div>
           </div>
         </div>
         <div className="lastIcons">

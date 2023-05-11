@@ -12,9 +12,9 @@ import wework from '../assets/wework 1.svg'
 function Home() {
   const [filled, setFilled] = useState(3);
   return (
-    <div className="main-container">
-      <div className="intro-container">
-        <p>WeWork + Salesforce</p>
+    <div className="mainContainer">
+      <div className="introContainer">
+        <div className="heading">WeWork + Salesforce</div>
         <Button className="btn-primary">Publish/Share</Button>
       </div>
 
@@ -44,11 +44,11 @@ function Home() {
       </div>
 
       <div className="project-scope-container">
-        <p>Project Scope Recap</p>
+        <div className="heading"> Project Scope Recap</div>
         <div className="mutual-action-indicator">
           <div className="heading">
-            <p>Mutual Action Plan</p>
-            <p>{filled}%</p>
+            <div className="subHeading">Mutual Action Plan</div>
+            <div className="percentFilled">{filled}%</div>
           </div>
           <div className="indicator">
             <FilledLoader filledPercentage={filled} />

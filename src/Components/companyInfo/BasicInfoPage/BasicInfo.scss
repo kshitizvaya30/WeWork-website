@@ -4,52 +4,7 @@
     display: flex;
     flex-direction: row;
     flex: 2 1 auto;
-    margin-top: 50px;
-    
-
-    .leftContainer {
-        height: 300px;
-        width: 200px;
-        border-radius: 10px;
-        border: 1px solid #E9EBEB;
-        background-color: white !important;
-
-        @include md {
-            display: none;
-        }
-        
-
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin: 0 0;
-            padding: 0;
-            li {
-                list-style: none;
-                border-top: 1px solid #E9EBEB;
-                padding: 12px 0px;
-                a {
-                    text-decoration: none;
-                    color: #7B8786;
-                    font-size: 14px;
-                    font-weight: 400;
-                }
-            }
-
-            .heading {
-                list-style: none;
-                border-top: 1px solid #E9EBEB;
-                padding: 12px 0px;
-                a {
-                    text-decoration: none;
-                    color: #7B8786;
-                    font-size: 18px;
-                    font-weight: 700;
-                }
-            }
-        }
-    }
+    margin-top: 20px;
 
     .rightContainer{
         flex-grow: 1;
@@ -58,12 +13,32 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            width: 100%;
             // background-color: red;
 
             .heading1{
                 margin-left: 10px;
-                font-size: 1.7vw;
+                font-size: 25px;
                 font-weight: 700;
+
+                @include md {
+                    font-size: 20px;
+                }
+
+                @include sm{
+                    font-size: 16px;
+                }
+            }
+
+            .dropdownMenu{
+                
+                display: none;
+
+                @include sm {
+                    display: flex;
+                    align-items: center;
+                    
+                }
             }
 
             .iconBlock{
@@ -71,7 +46,7 @@
                 align-items: center;
                 justify-content: center;
                 border: 1px solid rgba(211, 215, 215, 1);
-                
+                border-radius: 5px;
                 .icon{
                     display: flex;
                     align-items: center;
@@ -80,9 +55,13 @@
                     padding-right: 5px;
                     margin: 5px 6px;
                     color: rgba(101, 115, 114, 1);
+                    font-size: 1.2vw;
                     &:last-child{
                         border-right: none;
                     }
+                }
+                @include sm{
+                    display: none;
                 }
                 
             }
@@ -96,20 +75,25 @@
                 height: 100%;
                 width: 100%;
                 border-radius: 10px;
-                object-fit:contain;
+                object-fit: cover;
+
+                @include sm {
+                    height: 300px;
+                    width: 100%;
+                }
             }
 
             .imageIcons{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                height: 3vw;
+                align-self: center;
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.7);
                 margin-top: 20px;
                 position: absolute;
-                top: 0;
-                left: 40%;
+                top: 5%;
+                left: 35%;
 
                 .icon {
                     border-right: 1px solid rgba(211, 215, 215, 1);
@@ -120,6 +104,14 @@
                     &:last-child{
                         border: none;
                     }
+                }
+
+                @include md {
+                    left: 25%;
+                }
+
+                @include sm {
+                    left: 5%;
                 }
             }
 
@@ -135,7 +127,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                line-height: 2rem;
+                line-height: 5vw;
 
                 .heading{
                     font-size: 5vw;
@@ -146,6 +138,9 @@
                     font-size: 1.2vw;
                     color: black;
                 }
+
+                
+                
             }
         }
 
