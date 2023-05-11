@@ -3,8 +3,9 @@
 .infoContainer {
     display: flex;
     flex-direction: row;
-    flex: 2 1 auto;
+    // flex: 2 1 auto;
     margin-top: 20px;
+    margin-left: -10px;
 
     .rightContainer{
         flex-grow: 1;
